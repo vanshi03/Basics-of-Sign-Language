@@ -14,7 +14,7 @@
 ## Here's the link to my site:✌️✌️<br>
  https://vanshi03.github.io/Basics-of-Sign-Language/
  
- *NOTE: Some options will not show in the website instead they will view backend content , as the database is made in PHPMyAdmin*<br>
+ *NOTE: Some options will not show in the website instead they will get downloaded , as the database is made in PHPMyAdmin*<br>
  So Hereby attaching Screenshots of the website!!
  
  ### Home
