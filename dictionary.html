@@ -302,18 +302,18 @@
           echo "<ul class='pagination justify-content-end'>";
           if($page1 >= 1)
             echo "<li class='page-item'>
-              <a class='page-link' href='dictionary.php?alpha=$alphabet&page=$page1'>Previous</a>
+              <a class='page-link' href='dictionary.html?alpha=$alphabet&page=$page1'>Previous</a>
             </li>";
           for($page1 = $page;$page1 <= $page +2;$page1 = $page1+1){
             if($page1<=$number_of_pages){
-              echo "<li class='page-item'><a class='page-link' href='dictionary.php?alpha=$alphabet&page=$page1'>$page1</a></li>";
+              echo "<li class='page-item'><a class='page-link' href='dictionary.html?alpha=$alphabet&page=$page1'>$page1</a></li>";
               $_REQUEST["page"]=$page1;
             }
           }
           $page1 = $page + 1;
           if($page1<=$number_of_pages)
             echo "<li class='page-item'>
-                <a class='page-link' href='dictionary.php?alpha=$alphabet&page=$page1'>Next</a>
+                <a class='page-link' href='dictionary.html?alpha=$alphabet&page=$page1'>Next</a>
               </li>
             </ul>";
           $conn->close();
