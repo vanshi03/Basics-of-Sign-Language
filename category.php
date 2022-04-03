@@ -152,12 +152,12 @@
                 <a class="classi" href="keywords.html">Keywords</a>
               </li>
               <li class="nav-li">
-                <a class="classi" href="dictionary.html">Dictionary</a>
+                <a class="classi" href="dictionary.php">Dictionary</a>
               </li>
               <li class="nav-item dropdown">
-                          <a href="alphanum.html" class="classi dropdown-toggle" data-bs-toggle="dropdown">Explore</a>
+                          <a href="alphanum.php" class="classi dropdown-toggle" data-bs-toggle="dropdown">Explore</a>
                           <div class="dropdown-menu dropdown-menu-end">
-                              <a href="alphanum.html" class="dropdown-item">Alphabets and numbers</a>
+                              <a href="alphanum.php" class="dropdown-item">Alphabets and numbers</a>
                               <a href="typesofsigns.html" class="dropdown-item">Types of Signs</a>
                               <a href="basichandshapes.html" class="dropdown-item">Basic Handshapes</a>
                               <a href="grammarexplanation.html" class="dropdown-item">Grammar Explanantion</a>
@@ -264,18 +264,18 @@
           echo "<ul class='pagination justify-content-end'>";
           if($page1 >= 1)
             echo "<li class='page-item'>
-              <a class='page-link' href='category.html?cate=$category&page=$page1'>Previous</a>
+              <a class='page-link' href='category.php?cate=$category&page=$page1'>Previous</a>
             </li>";
           for($page1 = $page;$page1 <= $page +2;$page1 = $page1 + 1){
             if($page1 <= $number_of_pages){
-              echo "<li class='page-item'><a class='page-link' href='category.html?cate=$category&page=$page1'>$page1</a></li>";
+              echo "<li class='page-item'><a class='page-link' href='category.php?cate=$category&page=$page1'>$page1</a></li>";
               $_REQUEST["page"]=$page1;
             }
           }
           $page1 = $page + 1;
           if($page1 <= $number_of_pages)
             echo "<li class='page-item'>
-                <a class='page-link' href='category.html?cate=$category&page=$page1'>Next</a>
+                <a class='page-link' href='category.php?cate=$category&page=$page1'>Next</a>
               </li>
             </ul>";
           $conn->close();
